@@ -53,20 +53,6 @@
   $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
-var descriptions = [
-  "Project 1 broooo",
-  "University assignment to make a meeting scheduler prototype. Uses Firebase to schedule meetings and for chat functionality.",
-  "project 3 sir",
-  "projetc 4$$$$",
-];
-
-var fullDescriptions = [
-  "Worked together with Preppi to create a 'Just Eat' type app for the beauty industry",
-  "made a meeting scehduleran io",
-  "test test",
-  "hu9encsionicom",
-];
-
 var projects = [
   {
     title: "Preppi",
@@ -82,15 +68,39 @@ var projects = [
   },
 
   {
+    title: "3D Virtual Gallery",
+    shortDescripton: "Hackathon project to get through covid",
+    longDescription: "Hacksheffield 6.0 winner broo",
+    images: [
+      "assets/screenshots/3d_virtual_gallery/virtual1.png",
+      "assets/screenshots/3d_virtual_gallery/virtual2.png",
+      "assets/screenshots/3d_virtual_gallery/virtual3.png",
+      "assets/screenshots/3d_virtual_gallery/virtual4.png",
+    ],
+  },
+
+  {
     title: "Meeting Schedular",
     shortDescripton:
       "University assignment to make a meeting scheduler prototype. Uses Firebase to schedule meetings and for chat functionality.",
     longDescription: "made a meeting scehduleran io",
     images: [
-      "assets/screenshots/preppi/home_screen.jpg",
-      "assets/screenshots/preppi/landing_screen.jpg",
-      "assets/screenshots/preppi/search_screen.jpg",
-      "assets/screenshots/preppi/business_home_screen.jpg",
+      "assets/screenshots/meeting_schedular/meeting1.jpg",
+      "assets/screenshots/meeting_schedular/meeting2.jpg",
+      "assets/screenshots/meeting_schedular/meeting3.jpg",
+      "assets/screenshots/meeting_schedular/meeting4.jpg",
+    ],
+  },
+  {
+    title: "IBM - Missing Maps",
+    shortDescripton:
+      "Worked with IBM during a university assingment utilising IBM Watson.",
+    longDescription: "ncoidddddddddddddddddddddddd dddddddddddnmcsic do.",
+    images: [
+      "assets/screenshots/volcano_escape/volcanoEscape.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape2.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape3.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape4.png",
     ],
   },
 
@@ -101,10 +111,10 @@ var projects = [
     longDescription:
       "ncoin sniocn s nicsnm son concsod ndsnocs ncsocn o nmcsic do.",
     images: [
-      "assets/screenshots/preppi/home_screen.jpg",
-      "assets/screenshots/preppi/landing_screen.jpg",
-      "assets/screenshots/preppi/search_screen.jpg",
-      "assets/screenshots/preppi/business_home_screen.jpg",
+      "assets/screenshots/drawing_assignment/drawing_1.jpg",
+      "assets/screenshots/drawing_assignment/drawing_2.png",
+      "assets/screenshots/drawing_assignment/drawing_3.png",
+      "assets/screenshots/drawing_assignment/drawing_4.png",
     ],
   },
 
@@ -117,6 +127,40 @@ var projects = [
       "assets/screenshots/volcano_escape/volcanoEscape2.jpg",
       "assets/screenshots/volcano_escape/volcanoEscape3.jpg",
       "assets/screenshots/volcano_escape/volcanoEscape4.png",
+    ],
+  },
+  {
+    title: "Sumo Slam",
+    shortDescripton: "Unity game developed in my spare time.",
+    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    images: [
+      "assets/screenshots/sumo_slam/sumoslam.jpg",
+      "assets/screenshots/sumo_slam/sumoslam2.jpg",
+      "assets/screenshots/sumo_slam/sumoslam3.jpg",
+      "assets/screenshots/sumo_slam/sumoslam4.jpg",
+    ],
+  },
+
+  {
+    title: "Movie Night",
+    shortDescripton: "Hackathon project1",
+    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    images: [
+      "assets/screenshots/movie_night/movienight.jpg",
+      "assets/screenshots/movie_night/movienight2.jpg",
+      "assets/screenshots/movie_night/movienight3.jpg",
+    ],
+  },
+
+  {
+    title: "Car Park Simulator",
+    shortDescripton: "University c#.",
+    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    images: [
+      "assets/screenshots/car_park_simulator/carParkSim.jpg",
+      "assets/screenshots/car_park_simulator/sim2.jpg",
+      "assets/screenshots/car_park_simulator/sim3.jpg",
+      "assets/screenshots/car_park_simulator/sim4.jpg",
     ],
   },
 ];
@@ -142,7 +186,7 @@ const setProjectFields = (index) => {
 setProjectFields(index);
 
 $("#carouselExampleIndicators").on("slide.bs.carousel", function (event) {
-  let size = descriptions.length - 1;
+  let size = projects.length - 1;
   if (event.direction == "left") {
     index < size ? index++ : (index = 0);
   }
