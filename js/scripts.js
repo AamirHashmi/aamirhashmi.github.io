@@ -55,12 +55,91 @@
 
 var descriptions = [
   "Project 1 broooo",
-  "Project 2 mate",
+  "University assignment to make a meeting scheduler prototype. Uses Firebase to schedule meetings and for chat functionality.",
   "project 3 sir",
   "projetc 4$$$$",
 ];
+
+var fullDescriptions = [
+  "Worked together with Preppi to create a 'Just Eat' type app for the beauty industry",
+  "made a meeting scehduleran io",
+  "test test",
+  "hu9encsionicom",
+];
+
+var projects = [
+  {
+    title: "Preppi",
+    shortDescripton: "Project Preppi",
+    longDescription:
+      "Worked together with Preppi to create a 'Just Eat' type app for the beauty industry",
+    images: [
+      "assets/screenshots/preppi/home_screen.jpg",
+      "assets/screenshots/preppi/landing_screen.jpg",
+      "assets/screenshots/preppi/search_screen.jpg",
+      "assets/screenshots/preppi/business_home_screen.jpg",
+    ],
+  },
+
+  {
+    title: "Meeting Schedular",
+    shortDescripton:
+      "University assignment to make a meeting scheduler prototype. Uses Firebase to schedule meetings and for chat functionality.",
+    longDescription: "made a meeting scehduleran io",
+    images: [
+      "assets/screenshots/preppi/home_screen.jpg",
+      "assets/screenshots/preppi/landing_screen.jpg",
+      "assets/screenshots/preppi/search_screen.jpg",
+      "assets/screenshots/preppi/business_home_screen.jpg",
+    ],
+  },
+
+  {
+    title: "Drawing Tool",
+    shortDescripton:
+      "University assignment to develop a paint like program in c++.",
+    longDescription:
+      "ncoin sniocn s nicsnm son concsod ndsnocs ncsocn o nmcsic do.",
+    images: [
+      "assets/screenshots/preppi/home_screen.jpg",
+      "assets/screenshots/preppi/landing_screen.jpg",
+      "assets/screenshots/preppi/search_screen.jpg",
+      "assets/screenshots/preppi/business_home_screen.jpg",
+    ],
+  },
+
+  {
+    title: "Volcano Escape",
+    shortDescripton: "University assignment to develop a web based game.",
+    longDescription: "ncoidddddddddddddddddddddddd dddddddddddnmcsic do.",
+    images: [
+      "assets/screenshots/volcano_escape/volcanoEscape.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape2.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape3.jpg",
+      "assets/screenshots/volcano_escape/volcanoEscape4.png",
+    ],
+  },
+];
+
 var index = 0;
-document.getElementById("projectDescription").innerHTML = descriptions[0];
+
+const setProjectFields = (index) => {
+  document.getElementById("exampleModalLabel").innerHTML =
+    projects[index].title;
+  document.getElementById("projectDescription").innerHTML =
+    projects[index].shortDescripton;
+  document.getElementById("fullProjectDescription").innerHTML =
+    projects[index].longDescription;
+
+  for (let i = 0; i < projects[index].images.length; i++) {
+    let ref = "img_" + i;
+    console.log(ref);
+    document.getElementById(ref).src = projects[index].images[i];
+    console.log(projects[index].images[i]);
+  }
+};
+
+setProjectFields(index);
 
 $("#carouselExampleIndicators").on("slide.bs.carousel", function (event) {
   let size = descriptions.length - 1;
@@ -70,6 +149,11 @@ $("#carouselExampleIndicators").on("slide.bs.carousel", function (event) {
   if (event.direction == "right") {
     index == 0 ? (index = size) : index--;
   }
-  console.log(index);
-  document.getElementById("projectDescription").innerHTML = descriptions[index];
+  //console.log(projects[index].shortDescripton);
+  setProjectFields(index);
+});
+
+// MDB Lightbox Init
+$(function () {
+  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });

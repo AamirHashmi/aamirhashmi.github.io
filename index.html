@@ -86,7 +86,7 @@
             </p>
           </div>
         </div>
-        <img class="img-fluid" src="assets/img/ipad.png" alt="" />
+        <img class="img-fluid" src="" alt="" />
       </div>
     </section>
     <!-- Projects-->
@@ -104,7 +104,7 @@
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
-              <h4>Projects</h4>
+              <h4>My Project</h4>
               <p class="text-black-50 mb-0">
                I have many different projects from university and things I have made in my own time, please take a look :)
               </p>
@@ -120,7 +120,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-left"
                   >
-                    <h4 class="text-white">What is it?</h4>
+                    <h4 class="text-white" id="exampleModalLabel">What is it?</h4>
                     <p class="mb-0 text-white-50" id="projectDescription">
                      
                     </p>
@@ -130,25 +130,45 @@
               </div>
           </div>
           <div class="col-lg-6">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators"  class="active"></li>
+                  <li data-target="#carouselExampleIndicators" ></li>
+                  <li data-target="#carouselExampleIndicators" ></li>
+                  <li data-target="#carouselExampleIndicators" ></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="assets/img/bg-masthead.jpg" alt="First slide" id="slide_1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                        See More
+                      </button>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="assets/img/bg-masthead.jpg" alt="Second slide"  id="slide_2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                        See More
+                      </button>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="assets/img/bg-masthead.jpg" alt="Third slide"  id="slide_3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                        See More
+                      </button>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="assets/img/bg-masthead.jpg" alt="Fourth slide"  id="slide_4">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                        See More
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -165,6 +185,59 @@
         <!-- Project Two Row-->
        
     </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col-md-12">
+            
+                <div id="mdb-lightbox-ui"></div>
+            
+                <div class="mdb-lightbox no-margin d-flex flex-row">
+            
+                  <div id="carouselProjectImages" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img id="img_0" class="d-block w-100" src="" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img id="img_1" class="d-block w-100" src="" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img id="img_2" class="d-block w-100" src="" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img id="img_3" class="d-block w-100" src="" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselProjectImages" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProjectImages" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </div>
+
+            <p class="m-5" id="fullProjectDescription">
+
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- Signup-->
     <section class="signup-section" id="signup">
@@ -181,11 +254,11 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Location</h4>
+                <i class="fas fa-file text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Resume</h4>
                 <hr class="my-4" />
                 <div class="small text-black-50">
-                  Sheffield, UK
+                  <a href="assets/website_resume.pdf" target="_blank">View here</a>
                 </div>
               </div>
             </div>
@@ -197,7 +270,7 @@
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4" />
                 <div class="small text-black-50">
-                  <a href="#!">aamirhashmi.203@gmail.com</a>
+                  aamirhashmi.203@gmail.com
                 </div>
               </div>
             </div>
@@ -212,6 +285,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         <div class="social d-flex justify-content-center">
           <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
