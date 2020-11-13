@@ -56,9 +56,9 @@
 var projects = [
   {
     title: "Preppi",
-    shortDescripton: "Project Preppi",
+    shortDescripton: "React Native application for Android and IOS",
     longDescription:
-      "Worked together with Preppi to create a 'Just Eat' type app for the beauty industry",
+      "Worked together with Preppi to create a 'Just Eat' type app for the beauty industry. Users can book appointments for certain treatments that businesses may offer.",
     images: [
       "assets/screenshots/preppi/home_screen.jpg",
       "assets/screenshots/preppi/landing_screen.jpg",
@@ -69,8 +69,10 @@ var projects = [
 
   {
     title: "3D Virtual Gallery",
-    shortDescripton: "Hackathon project to get through covid",
-    longDescription: "Hacksheffield 6.0 winner broo",
+    shortDescripton:
+      "Virtual gallery to showcase art. Won 2nd place for best Hack at HackSheffield 6.0",
+    longDescription:
+      "Uses the javascript 3d library Three.js to render scenes within the web browser.",
     images: [
       "assets/screenshots/3d_virtual_gallery/virtual1.png",
       "assets/screenshots/3d_virtual_gallery/virtual2.png",
@@ -80,10 +82,11 @@ var projects = [
   },
 
   {
-    title: "Meeting Schedular",
+    title: "Meeting Schedular Mobile App",
     shortDescripton:
-      "University assignment to make a meeting scheduler prototype. Uses Firebase to schedule meetings and for chat functionality.",
-    longDescription: "made a meeting scehduleran io",
+      "University assignment to make a meeting scheduler prototype.",
+    longDescription:
+      "Uses Android studio and firebase. Has User authentication, ability to create meetings with specific users and an in-built chat system.",
     images: [
       "assets/screenshots/meeting_schedular/meeting1.jpg",
       "assets/screenshots/meeting_schedular/meeting2.jpg",
@@ -94,22 +97,23 @@ var projects = [
   {
     title: "IBM - Missing Maps",
     shortDescripton:
-      "Worked with IBM during a university assingment utilising IBM Watson.",
-    longDescription: "ncoidddddddddddddddddddddddd dddddddddddnmcsic do.",
+      "Worked with IBM during a university assignment utilising IBM Watson.",
+    longDescription:
+      "The webb app would scan a selected area of the map and mark signs of life within that area using IBM watson and image recognition AI",
     images: [
-      "assets/screenshots/volcano_escape/volcanoEscape.jpg",
-      "assets/screenshots/volcano_escape/volcanoEscape2.jpg",
-      "assets/screenshots/volcano_escape/volcanoEscape3.jpg",
-      "assets/screenshots/volcano_escape/volcanoEscape4.png",
+      "assets/screenshots/ibm_missingmaps/missingmaps1.jpg",
+      "assets/screenshots/ibm_missingmaps/missingmaps1.jpg",
+      "assets/screenshots/ibm_missingmaps/missingmaps1.jpg",
+      "assets/screenshots/ibm_missingmaps/missingmaps1.jpg",
     ],
   },
 
   {
     title: "Drawing Tool",
     shortDescripton:
-      "University assignment to develop a paint like program in c++.",
+      "University assignment to develop a paint like program in C++.",
     longDescription:
-      "ncoin sniocn s nicsnm son concsod ndsnocs ncsocn o nmcsic do.",
+      "Developed in my Object-Orientd programming module at university. The application was to help us understand OOP principles and put them into good practice.",
     images: [
       "assets/screenshots/drawing_assignment/drawing_1.jpg",
       "assets/screenshots/drawing_assignment/drawing_2.png",
@@ -121,7 +125,8 @@ var projects = [
   {
     title: "Volcano Escape",
     shortDescripton: "University assignment to develop a web based game.",
-    longDescription: "ncoidddddddddddddddddddddddd dddddddddddnmcsic do.",
+    longDescription:
+      "Uses the Three.js 3d library. The goal of the game is to jump on the rocks while lava is rising. THe higher you go the more your score increases",
     images: [
       "assets/screenshots/volcano_escape/volcanoEscape.jpg",
       "assets/screenshots/volcano_escape/volcanoEscape2.jpg",
@@ -132,7 +137,8 @@ var projects = [
   {
     title: "Sumo Slam",
     shortDescripton: "Unity game developed in my spare time.",
-    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    longDescription:
+      "Sumo slam was my first external project outside of university work. The aim of the game is to knock the opponent player out of the ring. You have access to boost and shield powerups which add more layers of depth to the game. This game was developed using Unity and C# object-oriented programming. However due to my lack of experience in modelling tools such as blender, I was unable to import fitting models for the game so the players are cubes. In the future I would love to revisit this game and add models, more levels and custom music.",
     images: [
       "assets/screenshots/sumo_slam/sumoslam.jpg",
       "assets/screenshots/sumo_slam/sumoslam2.jpg",
@@ -143,19 +149,23 @@ var projects = [
 
   {
     title: "Movie Night",
-    shortDescripton: "Hackathon project1",
-    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    shortDescripton: "A web app to find information on shows and movies",
+    longDescription:
+      "Developed during my first 24 hour hackathon. Uses the OMDb api to get movie information such as description, trailer and cover photo.",
     images: [
       "assets/screenshots/movie_night/movienight.jpg",
       "assets/screenshots/movie_night/movienight2.jpg",
+      "assets/screenshots/movie_night/movienight3.jpg",
       "assets/screenshots/movie_night/movienight3.jpg",
     ],
   },
 
   {
     title: "Car Park Simulator",
-    shortDescripton: "University c#.",
-    longDescription: "ncoiddddddddddddd ddddddddddd dddddddddddnmcsic do.",
+    shortDescripton:
+      "University Project to simulate a car park system using C#.",
+    longDescription:
+      "Developed during my systems modeeling module in first year of university.",
     images: [
       "assets/screenshots/car_park_simulator/carParkSim.jpg",
       "assets/screenshots/car_park_simulator/sim2.jpg",
